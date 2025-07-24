@@ -1,0 +1,3 @@
+id,time_stamp,reg_number,alt,dir,speed,lat,lng,dep_iata,flight_icao,status
+1,07/24/2025 19:27:32,N575NN,2638,278.1,527,35.527414,-81.259239,CLT,JIA5213,en-route
+2,07/24/2025 19:27:32,N506GJ,undefined,32,37,41.982433,-87.909005,ORD,GJS4194,en-route

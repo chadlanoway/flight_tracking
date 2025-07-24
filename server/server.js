@@ -4,10 +4,15 @@
 
 // Author:        Bucky Badger
 
+//find and end processes on 8000: sudo ss -ltnp | grep :8000 and sudo kill -9 1234
+
 const PORT = 8000
 
 // Import Required Modules
 const express = require("express")
+
+
+const { runQueries } = require('../server/database.js')
 
 const app = express()
 
@@ -133,7 +138,7 @@ app.get('/flights/:airport_code', async (request, response) => {
         console.log(" +++++++++ calling runQueries() +++++++++++++++")
 
         // Used for lab 7
-        // runQueries(json)
+        runQueries(json)
 
         console.log(" +++++++++ completed runQueries() +++++++++++++++")
 
